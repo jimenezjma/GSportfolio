@@ -7,61 +7,67 @@
         <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
-        <header>
+        <header class="header">
             <div>
-                <figure>
+                <figure class="logo">
                     <img src="Imagenes/favicon.png" width="70" height="70" alt="Logo">
                 </figure>
             </div>
-            <nav>
+            <nav class="menu">
                 <ol>
                     <li>
-                        <a href="./portafolio/index.html">Portafolio</a>
+                        <a class="link" href="./portafolio/index.html">Portafolio</a>
                     </li>
                     <li>
-                        <a href="#proyectos">Proyectos</a>
+                        <a class="link" href="#proyectos">Proyectos</a>
                     </li>
                     <li>
-                        <a href="#eventos">Eventos</a>
+                        <a class="link" href="#eventos">Eventos</a>
                     </li>
                     <li>
-                        <a href="#contacto">Contacto</a>
+                        <a class="link" href="#contacto">Contacto</a>
                     </li>
                 </ol>
             </nav>
         </header>
-        <section>
+        <section class="hero">
             <img src="Imagenes/Portada.png" alt="Portada">
             <h1>
                 Un equipo capacitado para dar vida a tus <strong>Ideas.</strong>
             </h1>
         </section>
-        <section id="proyectos">
+        <section id="proyectos" class="portfolio">
             <h2>Proyectos Destacados</h2>
-            <article>
-                <img src="Imagenes/Oval.png" width="737" height="360" alt="Oval">
-                <h3>OVAL</h3>
-                <h6>Gastronómica</h6>
-                <p><small><strong>Fecha:</strong> 01/01/2020</small></p>
+            <article class="project">
+                <figure class="project-imagecontainer">
+                    <img src="Imagenes/Oval.png" width="737" height="360" alt="Oval">
+                </figure>
+                <h3 class="project-title">OVAL</h3>
+                <h6 class="project-category">Gastronómica</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 01/01/2020</small></p>
             </article>
-            <article>
-                <img src="Imagenes/Lasagna.png" width="737" height="360" alt="Lasagna">
+            <article class="project">
+                <figure class="project-imagecontainer">
+                    <img src="Imagenes/Lasagna.png" width="737" height="360" alt="Lasagna">
+                </figure>
                 <h3>LASAGNA DI COMO</h3>
                 <h6>Gastronómica</h6>
                 <p><small><strong>Fecha:</strong> 07/03/2020</small></p>
             </article>
         </section>
-        <section id="eventos">
+        <section id="eventos" class="events">
             <h2>Eventos Destacados</h2>
             <article>
-                <img src="Imagenes/Esgrima.png" alt="esgrima">
-                <h3>Competición Internacional de Esgrima</h3>
-                <h6>Deportiva</h6>
-                <p><small><strong>Fecha:</strong> 01/12/2019</small></p>
+                <figure class="events-imagecontainer">
+                    <img src="Imagenes/Esgrima.png" alt="esgrima">
+                </figure>
+                <h3 class="events-title">Competición Internacional de Esgrima</h3>
+                <h6 class="events-category">Deportiva</h6>
+                <p class="events-date"><small><strong>Fecha:</strong> 01/12/2019</small></p>
             </article>
         </section>
-        <section id="contacto"> 
-            <form action="/contacto">
+        <section id="contacto" class="contact"> 
+            <form action="/contacto" class="contact-form">
                 <h2>Formulario de contacto</h2>
                 <label for="email">Email:</label>
                 <br>
@@ -75,7 +81,7 @@
                 <br>
                 <button>Enviar</button>
         </section>
-        <footer>
+        <footer class="footer">
             <h2>Gabriel Serpa</h2>
             <p>Barcelona, España</p>
             <p>Email: gabo.505@gmail.com</p>
