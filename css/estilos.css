@@ -1,5 +1,6 @@
 
 /* header bg color: #16232b*/
+/* gris claro: #626262*/
 
 body
 {
@@ -7,6 +8,18 @@ body
     font-size: 15px;
     letter-spacing: -.1px;
     line-height: 20px;
+    margin: 0px;
+}
+
+figure{
+    margin:0;
+}
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 h1,
@@ -23,7 +36,7 @@ h6{
 h1{
     font-family: 'Playfair Display', serif;
     font-weight: normal;
-    letter-spacing: -.1px;
+    letter-spacing: 2px;
     font-size: 45px;
     line-height: 65px;
     color: black;
@@ -31,6 +44,10 @@ h1{
 
 h1 strong{
     color: #09489b ;
+    letter-spacing: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
 }
 
 h2{
@@ -51,14 +68,39 @@ h6{
 }
 
 .hero{
-    height: 700px;
+    height: 680px;
     background-image: url(../Imagenes/Portada.png);
     background-color: rgb(255, 255, 255);
     background-size: 1440px 600px;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
-    text-align: center;
+    border-bottom: 3px solid black;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero h1{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.portfolio{
+background-color: #ece6e6d7;
+padding: 15px;
+}
+
+.project{
+    background-color: white;
+    border-color: #16232b;
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 10px;
+    margin: 15px 20px;
+    padding: 40px;
+    display: flex;
 }
 
 .project-details {
@@ -72,9 +114,34 @@ h6{
 .header{
     background-color: #16232b;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
 }
 
-.header a {
+.menu{
+    height: inherit;
+    margin: 0 15px;
+}
+
+.header ul{
+    display: flex;
+    height: inherit;
+}
+
+.header ul li{
+    height: inherit;
+}
+
+.header a{
     color: white;
     text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.footer{
+    display: block;
 }
